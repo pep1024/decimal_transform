@@ -1,0 +1,12 @@
+name: decimal_transform
+title: decimal_transform
+username:
+account: pep1024
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 224562
+bundleId: 1026540
+url: https://pep1024.shinyapps.io/decimal_transform/
+when: 1507980431.00002
+asMultiple: FALSE
+asStatic: FALSE
