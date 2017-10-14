@@ -1,7 +1,0 @@
-TODO:
-2017-10-14
-1) Delete connection to shinyappio in github
-2) create reactive functions properly
-3) Include reference
-4) Include and action buttom to do the transformation
-5) Capture output of gdc and return the right answer
