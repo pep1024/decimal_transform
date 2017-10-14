@@ -62,7 +62,7 @@ shinyServer <- function(input, output) {
     
     num <- as.numeric(num_char)
     den <- as.numeric(den_char)
-    MCD <- suppressWarnings(gcd(num, den))
+    MCD <- gcd_pep(num, den)
     
     resp2 <- ""
     if (MCD > 1)  resp2 <-  paste0(" = ",
