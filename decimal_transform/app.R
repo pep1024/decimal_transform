@@ -6,12 +6,15 @@ ui <- fluidPage(
   
   # Application title
   titlePanel("Convert decimal numbers into fractions"),
-  p("All rational numbers can be represented by a decimal number, finite or repeating and the other way around.
+
+  
+  HTML(paste0("All rational numbers can be represented by a decimal number", tags$sup("[1]"),
+    ", finite or repeating and the other way around.
     Given a decimal number a.b(c), where c represents the repeating part or repetend, it can be expressed as a fraction.
-    Decimal numbers that have non zero repetend are called repeating or recurring decimals.
-    If they do not have repetend, they are called terminating decimals"),
+    Decimal numbers that have non zero repetend are called", strong(" repeating"), " or ", strong("recurring decimals."),
+    " If they do not have repetend, they are called ", strong("terminating decimals"), ".")), 
   p("This application finds the fraction expression of a given decimal number.
-    Build first the decimal number by introducing each part a, b and c.\n Then Click the button \'Compute fraction\'"),
+    Build first the decimal number by introducing each part a, b and c.\n Then, click the button \'Compute fraction\'"),
   
   
   # Sidebar with textboxes to get number info
@@ -28,7 +31,13 @@ ui <- fluidPage(
       h4("Equivalent fraction"),
       h4(textOutput("y"))
     )
-  )
+  ),
+  tags$sup("[1]"),
+  " ",
+  a(" https://en.wikipedia.org/wiki/Repeating_decimal", 
+    href = "[https://en.wikipedia.org/wiki/Repeating_decimal"),
+  tags$div(
+    'align' = "left", "Pep Porrà, 2017-10-12")
 ) 
 
 
